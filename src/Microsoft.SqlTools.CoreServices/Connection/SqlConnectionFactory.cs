@@ -20,6 +20,7 @@ namespace Microsoft.SqlTools.CoreServices.Connection
         /// </summary>
         public DbConnection CreateSqlConnection(string connectionString)
         {
+            // Added some comment for demo1
             RetryPolicy connectionRetryPolicy = RetryPolicyFactory.CreateDefaultConnectionRetryPolicy();
             RetryPolicy commandRetryPolicy = RetryPolicyFactory.CreateDefaultConnectionRetryPolicy();
             return new ReliableSqlConnection(connectionString, connectionRetryPolicy, commandRetryPolicy);

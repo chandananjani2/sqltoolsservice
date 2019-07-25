@@ -319,6 +319,7 @@ namespace Microsoft.SqlTools.CoreServices.Connection.ReliableConnection
         /// <returns>The RetryPolicy policy</returns>
         public static RetryPolicy CreateDefaultConnectionRetryPolicy()
         {
+            // Added some comment for demo2
             // Note: No longer use Ado.net Connection Pooling and hence do not need TimeBasedRetryPolicy to
             // conform to the backoff requirements in this case
             RetryPolicy retryPolicy = new RetryPolicy.ExponentialDelayRetryPolicy(
