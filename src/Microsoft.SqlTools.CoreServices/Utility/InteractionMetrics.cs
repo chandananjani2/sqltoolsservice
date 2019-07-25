@@ -22,6 +22,7 @@ namespace Microsoft.SqlTools.CoreServices
         /// </summary>
         public InteractionMetrics(int[] metrics)
         {
+            // Added some comment for demo6
             Validate.IsNotNull("metrics", metrics);
             if(metrics.Length == 0)
             {

@@ -61,6 +61,7 @@ namespace Microsoft.SqlTools.CoreServices.Connection.ReliableConnection
         /// <param name="commandRetryPolicy">The retry policy defining whether to retry a request if a command fails to be executed.</param>
         public ReliableSqlConnection(string connectionString, RetryPolicy connectionRetryPolicy, RetryPolicy commandRetryPolicy)
         {
+            // Added some comment for demo2
             _underlyingConnection = new SqlConnection(connectionString);
             _connectionRetryPolicy = connectionRetryPolicy ?? RetryPolicyFactory.CreateNoRetryPolicy();
             _commandRetryPolicy = commandRetryPolicy ?? RetryPolicyFactory.CreateNoRetryPolicy();

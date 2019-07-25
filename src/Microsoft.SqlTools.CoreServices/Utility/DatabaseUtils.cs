@@ -16,6 +16,7 @@ namespace Microsoft.SqlTools.CoreServices.Utility
         /// <returns>return true if the database is a system database</returns>
         public static bool IsSystemDatabaseConnection(string databaseName)
         {
+            // Added some comment for demo5
             return (string.IsNullOrWhiteSpace(databaseName) ||
                 string.Compare(databaseName, CommonConstants.MasterDatabaseName, StringComparison.OrdinalIgnoreCase) == 0 ||
                 string.Compare(databaseName, CommonConstants.MsdbDatabaseName, StringComparison.OrdinalIgnoreCase) == 0 ||

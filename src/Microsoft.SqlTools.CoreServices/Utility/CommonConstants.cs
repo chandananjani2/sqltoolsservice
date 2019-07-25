@@ -17,5 +17,7 @@ namespace Microsoft.SqlTools.CoreServices.Utility
         public const string TempDbDatabaseName = "tempdb";
 
         public const string DefaultBatchSeperator = "GO";
+
+        // Added some comment for demo4
     }
 }
