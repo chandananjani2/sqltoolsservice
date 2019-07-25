@@ -7,7 +7,7 @@ using Microsoft.SqlTools.DataProtocol.Contracts.Connection;
 namespace Microsoft.SqlTools.CoreServices.Connection
 {
     /// <summary>
-    /// Used to uniquely identify a CancellationTokenSource associated with both test3
+    /// Used to uniquely identify a CancellationTokenSource associated with both test4
     /// a string URI and a string connection type.
     /// </summary>
     public class CancelTokenKey : CancelConnectParams, IEquatable<CancelTokenKey>
